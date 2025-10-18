@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnnoyingposterLOL - Home</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="LOGO.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="coins.html">Coins</a>
+            <a href="search.html">Search</a>
+        </div>
+        <div class="site-title">AnnoyingposterLOL</div>
+        <div class="nav-right">
+            <span class="coins-display" id="coins-display">0 AL</span>
+            <a href="profile.html">Profile</a>
+            <a href="settings.html">Settings</a>
+            <a href="#" onclick="logout()">Logout</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="new-post-section">
+            <h2>Create New Post</h2>
+            <button id="post-text-btn">Text Post</button>
+            <button id="post-image-btn">Image Post</button>
+            <button id="post-video-btn">Video Post</button>
+            
+            <div id="post-form" class="hidden">
+                <input type="text" id="post-title" placeholder="Post Title">
+                <textarea id="post-text" placeholder="What's on your mind?"></textarea>
+                <input type="file" id="post-file">
+                <button id="submit-post-btn">Post</button>
+            </div>
+        </section>
+
+        <div class="posts-grid" id="posts-container"></div>
+    </main>
+
+    <script src="JS/main.js"></script>
+    <script src="JS/posts.js"></script>
+</body>
+</html>

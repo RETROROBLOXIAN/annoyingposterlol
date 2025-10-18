@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - AnnoyingposterLOL</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="LOGO.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="coins.html">Coins</a>
+            <a href="search.html">Search</a>
+        </div>
+        <div class="site-title">AnnoyingposterLOL</div>
+        <div class="nav-right">
+            <span class="coins-display" id="coins-display">0 AL</span>
+            <a href="profile.html">Profile</a>
+            <a href="settings.html">Settings</a>
+            <a href="#" onclick="logout()">Logout</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="profile-header">
+            <img id="profile-pfp" class="profile-pfp" alt="Profile Picture">
+            <div class="profile-name" id="profile-name">Loading...</div>
+            <div class="profile-username" id="profile-username">@username</div>
+            
+            <div class="profile-stats">
+                <div class="stat">
+                    <div class="stat-number" id="profile-posts">0</div>
+                    <div class="stat-label">Posts</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="profile-followers">0</div>
+                    <div class="stat-label">Followers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="profile-following">0</div>
+                    <div class="stat-label">Following</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="profile-coins">0</div>
+                    <div class="stat-label">Coins</div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 20px;">
+                <strong>Email:</strong> <span id="profile-email">loading...</span><br>
+                <strong>Joined:</strong> <span id="profile-join-date">loading...</span>
+            </div>
+        </div>
+
+        <div class="edit-section">
+            <h3>Edit Profile</h3>
+            <button id="edit-pfp-btn">Change Profile Picture</button>
+            <input type="file" id="pfp-input" accept="image/*" class="hidden">
+            <input type="text" id="edit-name" placeholder="Display Name">
+            <button id="save-profile-btn">Save Changes</button>
+        </div>
+    </main>
+
+    <script src="JS/main.js"></script>
+    <script src="JS/profile.js"></script>
+</body>
+</html>

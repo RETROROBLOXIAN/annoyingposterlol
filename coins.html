@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coins - AnnoyingposterLOL</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="LOGO.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="coins.html">Coins</a>
+            <a href="search.html">Search</a>
+        </div>
+        <div class="site-title">AnnoyingposterLOL</div>
+        <div class="nav-right">
+            <span class="coins-display" id="coins-display">0 AL</span>
+            <a href="profile.html">Profile</a>
+            <a href="settings.html">Settings</a>
+            <a href="#" onclick="logout()">Logout</a>
+        </div>
+    </header>
+
+    <main>
+        <h2>Your Coins: <span id="user-coins">0</span> AL</h2>
+        
+        <div class="coin-packages">
+            <div class="coin-package">
+                <div class="coin-amount">100 AL</div>
+                <div class="coin-price">$0.10</div>
+                <button id="buy-100">Buy Now</button>
+            </div>
+            <div class="coin-package">
+                <div class="coin-amount">1,000 AL</div>
+                <div class="coin-price">$1.00</div>
+                <button id="buy-1000">Buy Now</button>
+            </div>
+            <div class="coin-package">
+                <div class="coin-amount">5,000 AL</div>
+                <div class="coin-price">$5.00</div>
+                <button id="buy-5000">Buy Now</button>
+            </div>
+            <div class="coin-package">
+                <div class="coin-amount">10,000 AL</div>
+                <div class="coin-price">$10.00</div>
+                <button id="buy-10000">Buy Now</button>
+            </div>
+            <div class="coin-package">
+                <div class="coin-amount">100,000 AL</div>
+                <div class="coin-price">$100.00</div>
+                <button id="buy-100000">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="convert-section">
+            <h3>Convert Coins to Money</h3>
+            <p>1000 AL = $0.10 | Minimum conversion: 1000 AL</p>
+            <button id="convert-coins">Convert Coins</button>
+        </div>
+    </main>
+
+    <script src="JS/main.js"></script>
+    <script src="JS/coins.js"></script>
+</body>
+</html>
